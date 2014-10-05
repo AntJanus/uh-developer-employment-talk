@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+                    <script type="text/template">
+                        # Working as a designer or developer
+                        <p>
+                            <small>Created by <a href="http://antjanus.com">Antonin Januska</a> / <a href="http://twitter.com/antjanus">@antjanus</a></small>
+                        </p>
+                    </script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## About me
+
+                        * contractor for one of the best design companies in the US
+                        * full-time developer & ocassionally contracting as designer
+                        * self taught
+                        * dropped out of college in Sophomore year to become a Lead Developer
+                        * in the top 10% in pay according to Salary.com in Houston
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## About the job market
+
+                        ### Development
+                        * highest job growth in all of industries
+                        * demand exceeds supply (some statistics quote that only 1 in every 5 positions get filled)
+
+
+                        ### Design
+
+                        * trails behind development by about half in growth
+                        * design is increasingly becoming a "skill" not a profession
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## Cross skills
+
+                        The job of a web developer or web designer does not end with its literal definition.
+
+                        ###Designers
+                        Design is slowly merging with development and other professions. Skills:
+
+                        * User Interface (designing an application)
+                        * User Experience (designing the process of using an application)
+                        * writing (top design agencies require designers to have writing experience)
+                        * rapid prototyping (use HTML/CSS/JS instead of mock-ups)
+                        * front-end skills
+                        * animation
+
+                        ###Developers
+                        Developers are required to have more skills as times goes by:
+
+                        * quickly pick up new frameworks
+                        * back-end and front-end programming principles
+                        * DevOps
+                        * testing
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## Finding a job: conventional method
+
+                        1. write a resume
+                        2. submit it to Monster.com, LinkedIn or similar sites
+                        3. Apply for jobs in the area
+                        4. Cross fingers
+                        5. remember that you need a portfolio
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## Finding a job: modern method
+
+                        - create a personal brand (social media, blogging, meetups, etc.)
+                        - publicly demonstrate skills (behance, Github, blogging)
+                        - participate in public discussions (HackerNews, Reddit, Tavern)
+                        - apply directly at companies where you build connections
+
+                        Remember:
+
+                        >The best jobs are not listed.
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+                        ## Finding a job: anecdotes
+
+                        - future employer learned how to use a skill because of my tutorials
+                        - future employer recognized my handle from social media, agreed with my views
+                        - future employer researched my background via personal brand hired me because he felt like he "knew me already"
+                        - co-worker was hired on the basis of a Twitter discussion
+                        - local meetups function as a hiring pool
+                        - several high quality blog articles made me stand out and memorable
+					</script>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon#/themes">Moon</a> -
+						<a href="?theme=solarized#/themes">Solarized</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
